@@ -1,6 +1,8 @@
 # Ispy
 This is a key-logger along with a gui that will screenshot the screen when matching words are found 
 
+Include the csv file and the icon.png file to the same directory, install all required dependencies too 
+
 Most of what you need to know is in the information center that you can access within the interface.
 
 The program allows you to add words of interest and screenshot when these words are typed into your keyboard
