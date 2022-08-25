@@ -129,8 +129,10 @@ def get_input():
     # I need to run this nested function so the new word can be run as a parameter to the add_word function
     def word_get():
         word = entry.get()
-        return word.lower()
-
+        if word == "":
+            return " "
+        else:
+            return word.lower()
     # we need to both destroy the window when we click ok and send the input to the csv file to be saved
     command = lambda: [add_word(word_get()), newWindow.destroy()]
     customtkinter.CTkButton(newWindow, text="Add Word", width=20, fg_color="#228B22", hover_color="#32CD32",
